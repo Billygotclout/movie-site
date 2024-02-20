@@ -26,7 +26,7 @@ function App() {
     fetchData();
   }, [search]);
   return (
-    <>
+    <div className="">
       <SideNav />
       <MovieDisplay
         isEmpty={isEmpty}
@@ -34,7 +34,7 @@ function App() {
         search={search}
         setSearch={setSearch}
       />
-    </>
+    </div>
   );
 }
 
